@@ -47,10 +47,6 @@
             <ul>
                 <li id="items">
                     <a href="##">PRE-INSCRIPTION</a>
-                    <ul>
-                        <li class="form"><a href="##">FORMATIONS PROFESSIONNELLES</a></li>
-                        <li class="form"><a href="##">FORMATIONS QUALIFANTES</a></li>
-                    </ul>
                 </li>
             </ul>
             <ul>
@@ -91,7 +87,31 @@
                 <a href="##"><li class="inf">FORUM</li></a>
             </ul>
         </div>
-        <div id="diaporama">DIAPORAMA ICI
+        <div id="diaporama">
+            <section id="slideshow">
+		
+	<div class="container" width="640">
+		<div class="c_slider"></div>
+		<div class="slider">
+			<figure>
+				<img src="images/img1.JPG" alt="" width="640" height="310" />
+				<figcaption>Groupe Bowl, nos differents parcours</figcaption>
+
+			</figure><!--
+			--><figure>
+				<img src="images/img2.JPG" alt="" width="640" height="310" />
+				<figcaption>Prenez plus d'informations</figcaption>
+			</figure><!--
+			--><figure>
+				<img src="images/img3.JPG" alt="" width="640" height="310" />
+				<figcaption>inscrivez-vous</figcaption>
+
+			</figure>
+		</div>
+	</div>
+		
+	<span id="timeline"></span>
+</section>
         </div>
         <div id="download">
             <h4>TELECHARGER LES FLAYERS POUR VOIR NOS FORMATIONS DANS LES DIFFERENTS NIVEAUX (BTS,LICENCES PRO,MASTERS)</h4>
@@ -176,8 +196,8 @@
            <div id="part2">
                <h2><span>SUIVEZ-NOUS</span></h2>
             <ul>
-                <li><img src="" alt="">contact : +225224434 21</a></li><br/>
-                <li><img src=""><a href="mailto:"></a>legroupebowl@gmail.com</li><br/>              
+                <li><img src="" alt=""/>contact : +225224434 21</a></li><br/>
+                <li><img src=""/><a href="mailto:">legroupegowl@gmail.com</a></li><br/>              
             </ul>
             <div id="part3"><br><br>
             <button class="button share_twitter" data-url="http://...." >
@@ -192,108 +212,10 @@
             <button class="button share_linkedin" data-url="http://....">
             <img src="images/footer-in-icon.png" alt=""width="15" height="15"> Partager sur linkedin
             </button> 
-            <script>(function(){
-   
-       var popupCenter = function(url, title, width, height){
-           var popupWidth = width || 640;
-           var popupHeight = height || 320;
-           var windowLeft = window.screenLeft || window.screenX;
-           var windowTop = window.screenTop || window.screenY;
-           var windowWidth = window.innerWidth || document.documentElement.clientWidth;
-           var windowHeight = window.innerHeight || document.documentElement.clientHeight;
-           var popupLeft = windowLeft + windowWidth / 2 - popupWidth / 2 ;
-           var popupTop = windowTop + windowHeight / 2 - popupHeight / 2;
-           var popup = window.open(url, title, 'scrollbars=yes, width=' + popupWidth + ', height=' + popupHeight + ', top=' + popupTop + ', left=' + popupLeft);
-           popup.focus();
-           return true;
-       };
-   
-       document.querySelector('.share_twitter').addEventListener('click', function(e){
-           e.preventDefault();
-           var url = this.getAttribute('data-url');
-           var shareUrl = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(document.title) +
-               "&via=Grafikart_fr" +
-               "&url=" + encodeURIComponent(url);
-           popupCenter(shareUrl, "Partager sur Twitter");
-       });
-   
-       document.querySelector('.share_facebook').addEventListener('click', function(e){
-           e.preventDefault();
-           var url = this.getAttribute('data-url');
-           var shareUrl = "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(url);
-           popupCenter(shareUrl, "Partager sur facebook");
-       });
-   
-       document.querySelector('.share_gplus').addEventListener('click', function(e){
-           e.preventDefault();
-           var url = this.getAttribute('data-url');
-           var shareUrl = "https://plus.google.com/share?url=" + encodeURIComponent(url);
-           popupCenter(shareUrl, "Partager sur Google+");
-       });
-   
-       document.querySelector('.share_linkedin').addEventListener('click', function(e){
-           e.preventDefault();
-           var url = this.getAttribute('data-url');
-           var shareUrl = "https://www.linkedin.com/shareArticle?url=" + encodeURIComponent(url);
-           popupCenter(shareUrl, "Partager sur Linkedin");
-       });
-   
-   })();</script>     
-            </div>
-            <div id="part4">
-              
-   <script type="text/javascript">
-   <!--
-   function cherche_valeur() {
-    var valeur = "";
-    if(document.cookie) {
-     var valeur_depart = document.cookie.indexOf("=") + 1;
-     var valeur_fin = document.cookie.indexOf(";");
-     if (valeur_fin == -1)
-      valeur_fin = document.cookie.length;
-     valeur = document.cookie.substring(valeur_depart,valeur_fin);
-    }
-    return valeur;
-   }
-   
-   function fixer_valeur(indicateur, valeur, expire) {
-    var maintenant = new Date();
-    var temps = new Date(maintenant.getTime() + expire);
-    document.cookie = indicateur+"="+valeur+"; expires="+temps.toGMTString()+";";
-   }
-   
-   function etat_compteur() {
-    var peremption = 1000*60*60*24*365;
-    var nombre = cherche_valeur();
-    var compteur = 0;
-    if(nombre != "") compteur = parseInt(nombre);
-    if(document.cookie) {
-      compteur = compteur + 1;
-      fixer_valeur("compteur",compteur,peremption);
-    }
-    else {
-      compteur = 1;
-      fixer_valeur("compteur",compteur,peremption);
-    }
-    return(compteur);
-   }
-   //-->
-   </script>
-   
-   
-   <script type="text/javascript">
-   <!--
-    var x = etat_compteur();
-    document.write("<p>nombre total de vos visites: " + x + "</p>");
-   //-->
-   </script><br><br>
-   <span class="total">nombre total de visite:</span>
-   <div id="sfc7eb7a2c1yhamtbrbnt16j4uxnt8mpjg5"></div>
-   <script type="text/javascript" src="https://counter2.freecounter.ovh/private/counter.js?c=7eb7a2c1yhamtbrbnt16j4uxnt8mpjg5&down=async" async></script>
-   <noscript class="noscript"><a href="https://www.compteurdevisite.com" title="compteur blog"><img src="https://counter2.freecounter.ovh/private/compteurdevisite.php?c=7eb7a2c1yhamtbrbnt16j4uxnt8mpjg5" border="0" title="compteur blog" alt="compteur blog"></a></noscript>
-   
-   <p class="licence">Copyright - All rights reserved 2018 - AEE devs</p>
    </div>
+            <div id="part4">
+            <p class="licence">Copyright - All rights reserved 2018 - AEE devs</p>
+            </div>
            </footer>
     </body>
 </html>
