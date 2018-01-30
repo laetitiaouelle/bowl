@@ -67,7 +67,7 @@ body{
     height: 30px;
 }
 #bouton_ok{
-    height: 35px;
+    height: 30px;
     position: relative;
     left: 10px;
 }
@@ -108,6 +108,10 @@ body{
 	position: absolute;
 	top: 30px;
 	visibility: hidden;
+}
+#menus ul li: ul{
+    position: absolute;
+    z-index: 2;
 }
 #menus ul li:hover ul{
 	visibility: visible;
@@ -561,6 +565,7 @@ mot_dg img{
 	background: linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
 	border-radius: 2px 2px 2px 2px;
 	box-shadow: 0 0 3px rgba(0,0,0, 0.2);
+    z-index: 1;
 }
  
 /* avanced box-shadow
