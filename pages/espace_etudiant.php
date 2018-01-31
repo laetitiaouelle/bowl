@@ -9,7 +9,7 @@
 </head>
 <body>
     <div>
-	<a href="../groupebowl.html" title="revenir en arriére">
+	<a href="../index.html" title="revenir en arriére">
 		<img src="../images/oraclecrea.jpg" alt="image" id="creation">
 	</a>
 	</div>
