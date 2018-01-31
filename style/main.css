@@ -689,3 +689,18 @@ mot_dg img{
 #container{
  min-heigth: 100%;
 }
+
+#aeedev{
+    position: relative;
+    left: 130px;
+    top: 5px;
+    width: 200px;
+    height: 170px;
+}
+#creation{
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    left: 360px;
+    top: 55px;
+}

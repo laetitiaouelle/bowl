@@ -1,0 +1,120 @@
+	#imprimer
+	{
+		position: left;
+		margin-left: : 40%;
+	}
+	aside
+	{
+		margin :center;
+	}
+	img
+	{
+		width: 300px;
+		position: top-left;
+	}
+	body
+	{
+		background-color: #4682B4;
+	}
+	h1
+	{	
+		background-color:black;
+		color: red;
+		width:40%;
+		margin :auto;
+		border : 8px black solid;
+	}
+	h4
+	{
+		margin : auto;
+		background-color:black;
+		color : red;
+		width: 12%;
+	}
+	form
+	{
+		margin-left: 200px;
+		margin-bottom: 20px;
+	}
+	h3
+	{
+		color: red;
+		width:30%;
+		margin:auto;
+		border : 5px black solid;
+		background-color:black;
+	}
+	article h3
+	{
+		color: green;
+		width:30%;
+		margin-left: 24%;
+		border : 5px black solid;
+		background-color:black;	
+	}
+	footer
+	{
+		position: left;
+	}
+	h5
+	{
+		margin : auto;
+		color : red;
+		border : 5px black solid;
+		width: 30%;
+		background-color:black;
+	}
+	h6
+	{
+		margin: auto;
+		color : green;
+		width: 30%;
+		font-size: 0.7em;
+	}
+#imprimer{
+    position: absolute;
+    left: 450px;
+    bottom: -750px;
+    height: 40px;
+    width: 80px;
+    border-radius: 5px 5px 5px 5px;
+    background-color: red;
+    font-weight: bold;
+}
+#imprimer:hover{
+    background-color: skyblue;
+}
+#soumission{
+    position: absolute;
+    bottom: -750px;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px 5px 5px 5px;
+    background-color: red;
+    font-weight: bold;
+    right: 420px;
+}
+#soumission:hover{
+    background-color: skyblue;
+}
+#image_ok{
+    position: absolute;
+    left: 600px;
+    top: 300px;
+}
+#depot p{
+    font-weight: bold;
+    position: relative;
+    left: 500px;
+    top:250px;
+    left: 488px;
+}
+#obligation{
+    position: relative;
+    left: 150px;
+    width: 400px;
+    margin: 20px;
+}
+#obligation span{
+    color: red;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width" ∕>
+
+			<title>Formulaire à remplir</title>
+			<link rel="stylesheet" type="text/css" href="style/formulaire%20(1).css">
+		</head>
+		<body>
+						<img src="images/logo1.PNG" alt="logo groupe bawl" id="logo">
+
+				<h1>  FICHE D'INSCRIPTION</h1><br>
+            <div  id="obligation"> <span style="color:black;">*</span>: signifie que le champ est obligatoire</div>
+            <form action="traitement.php" method="post">
+				<fieldset>
+                <legend><b>Vos informations personnelles</b></legend>
+                    <form method="post" action="traitement.php">
+				<p>
+					<label for="pseudo">NOM<span style="color:red;">*</span> :</label>
+					<input type="text" name="pseudo" id="pseudo" placeholder="Oracle" required /><br>
+						<br />
+					<label for="pseudo">PRENOM<span style="color:red;">*</span> :</label>
+					<input type="text" name="pseudo" id="pseudo"  placeholder="revolution" required/><br>
+						<br />
+					<label for="age">DATE DE NAISSANCE<span style="color:red;">*</span> :</label>
+					<input type="date" name="age" id="age" required/>
+					<label for="lieu">LE LIEU<span style="color:red;">*</span> :</label>
+					<input type="text" name="lieu" id="lieu" placeholder="abidjan/yopougon" required /><br>
+						<br />
+					<label for="pseudo">NATIONNALITE :</label>
+					<input type="text" name="pseudo" id="pseudo" value="Ivoirienne" />
+					<label for="pseudo">NIVEAU D'ETUDE<span style="color:red;">*</span> :</label>
+					<input type="text" name="pseudo" id="pseudo" required /><br>
+						<br />
+					<label for="pseudo">ADRESSE :</label>
+					<input type="text" name="pseudo" id="pseudo" placeholder="BP 491 anyama 01" />
+					<label for="pseudo">COMMUNE<span style="color:red;">*</span> :</label>
+					<input type="text" name="pseudo" id="pseudo" placeholder="yopougon" required/><br>
+						<br />
+					<label for="pseudo">QUARTIER :</label>
+					<input type="text" name="pseudo" id="pseudo"/>
+					<label for="numero">TELEPHONE<span style="color:red;">*</span> :</label>
+					<input type="text" name="numero" id="numero" placeholder="+22501020304" required /><br>
+						<br />
+					<label for="pseudo">PARENT A CONTACTER<span style="color:red;">*</span> :</label>
+					<input type="text" name="pseudo" id="pseudo" placeholder="en cas d'urgence" required/>
+					<label for="numero">CONTACT DU PARENT:</label>
+					<input type="number" name="numero" id="numero" /><br>
+						<br /><br><br/>
+
+				</p>
+                </fieldset>
+			
+
+			<fieldset>
+            <legend><b>Formation souhaitée</b></legend>
+                <h4> cochez la formation de votre choix </h4>
+                <section>
+					<p>
+						<input type="radio" name="radio" id="coche" /> <label for="coche">MIR</label><br>
+						<input type="radio" name="radio" id="coche" /> <label for="coche">MIR SOIR</label><br>
+						<input type="radio" name="radio" id="coche" /> <label for="coche">ELECTRICITE</label><br>
+					
+						<input type="radio" name="radio" id="coche" checked /> <label for="coche">NTIC</label><br>
+						<input type="radio" name="radio" id="coche" /> <label for="coche">MIR NTIC</label><br>
+						<input type="radio" name="radio" id="coche" /> <label for="coche">ELECTRICITE AUTO-FROID</label><br>
+						
+						<input type="radio" name="radio" id="coche" /> <label for="coche">ELECTRONIQUE</label><br>
+						<input type="radio" name="radio" id="coche" /> <label for="coche">MIR ELEC</label><br>
+						<input type="radio" name="radio" id="coche" /> <label for="coche">ELECTRICITE INDUS-BAT</label><br>
+							
+						<input type="radio" name="radio" id="coche" /> <label for="coche">TELECOM</label><br>
+						<input type="radio" name="radio" id="coche" /> <label for="coche">MIR TELECOM</label><br>
+						
+						<input type="radio" name="radio" id="coche" /> <label for="coche">AUTOMATISME</label>
+						<input type="radio" name="radio" id="coche" /> <label for="coche">MIR AUTOMATISME</label>
+
+			
+					<article><h3> FRAIS D'EXAMEN : 5000 francs cfa </h3></article><br>
+					<br/>
+						
+					
+					</p>
+			</section>
+            </fieldset>
+			
+			
+			<h5> COMMENT AVEZ-VOUS CONNU LE GROUPE BOWL ? </h5>
+				<p>
+					<input type="checkbox" name="coche" id="coche" /> <label for="coche">*Radio</label>
+					<input type="checkbox" name="coche" id="coche" /> <label for="coche">*Affiches</label>
+					<input type="checkbox" name="coche" id="coche" /> <label for="coche">*Prospectus</label>
+					<input type="checkbox" name="coche" id="coche" /> <label for="coche">*Journal</label>
+					<input type="checkbox" name="coche" id="coche" /> <label for="coche">*Un/Une Ami(e)</label>
+					<input type="checkbox" name="coche" id="coche" /> <label for="coche">*</label>
+					<label for="pseudo">Autre précisez :</label>
+					<input type="text" name="pseudo" id="pseudo" />
+				</p>
+			
+			<h6> Pour l'inscription : </h6>
+			
+				<p>
+					<input type="checkbox" name="coche" id="coche" /> <label for="coche">*Rame</label>
+					<input type="checkbox" name="coche" id="coche" /> <label for="coche">*Marker</label>
+					<input type="checkbox" name="coche" id="coche" /> <label for="coche">*Rouleau de caisse</label>
+					<input type="checkbox" name="coche" id="coche" /> <label for="coche">*Extrait</label>
+					<input type="checkbox" name="coche" id="coche" /> <label for="coche">*Photo</label>
+					<input type="checkbox" name="coche" id="coche" /> <label for="coche">*Relevé de note</label>
+					<input type="checkbox" name="coche" id="coche" /> <label for="coche">*Badge</label>
+
+				</p>
+				<p>
+					<br>
+					<br>
+					<label for="age">Fait a Abidjan le  :</label>
+					<input type="date" name="age" id="age" /><br>
+						<br>
+					<input type="submit" value="IMPRIMER" id="imprimer" />
+                    <input type="submit" value="SOUMETTRE" id="soumission"
+				</p>
+			</form>
+        
+
+		</body>
+	</html>
