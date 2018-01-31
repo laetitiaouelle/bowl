@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Espace etudiant BOWL || ESMAT</title>
-    <link rel="stylesheet" type="text/css" href="../style/formulaire%20(1).css"/>
+    <link rel="stylesheet" type="text/css" href="../style/main.css"/>
 </head>
 <body>
-    <img src="../images/maintenance2.jpg" alt="image" id="maintenance"/>
+    <div>
+	<a href="../groupebowl.html" title="revenir en arriére">
+		<img src="../images/oraclecrea.jpg" alt="image" id="creation">
+	</a>
+	</div>
 </body>
 </html>
