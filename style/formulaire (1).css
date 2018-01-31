@@ -3,6 +3,11 @@
 		position: left;
 		margin-left: : 40%;
 	}
+	#logo{
+		position: absolute;
+		width: 150px;
+		height: 120px;
+	}
 	aside
 	{
 		margin :center;
@@ -74,7 +79,7 @@
 #imprimer{
     position: absolute;
     left: 450px;
-    bottom: -750px;
+    bottom: -600px;
     height: 40px;
     width: 80px;
     border-radius: 5px 5px 5px 5px;
@@ -86,7 +91,7 @@
 }
 #soumission{
     position: absolute;
-    bottom: -750px;
+    bottom: -600px;
     height: 40px;
     width: 100px;
     border-radius: 5px 5px 5px 5px;
@@ -114,7 +119,4 @@
     left: 150px;
     width: 400px;
     margin: 20px;
-}
-#obligation span{
-    color: red;
 }
