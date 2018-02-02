@@ -2,20 +2,19 @@
 	<html>
 		<head>
 			<meta charset="utf-8">
-			<meta name="viewport" content="width=device-width" ∕>
-
+			<meta name="viewport" content="width=device-width"/∕>
 			<title>Formulaire à remplir</title>
 			<link rel="stylesheet" type="text/css" href="style/formulaire%20(1).css">
+            <link rel="stylesheet" type="text/css" href="style/responsive_forms.css"/>
 		</head>
 		<body>
 						<img src="images/logo1.PNG" alt="logo groupe bawl" id="logo">
 
 				<h1>  FICHE D'INSCRIPTION</h1><br>
             <div  id="obligation"> <span style="color:black;">*</span>: signifie que le champ est obligatoire</div>
-            <form action="traitement.php" method="post">
+            <form action="traitement.php" name="traitement" method="post">
 				<fieldset>
                 <legend><b>Vos informations personnelles</b></legend>
-                    <form method="post" action="traitement.php">
 				<p>
 					<label for="pseudo">NOM<span style="color:red;">*</span> :</label>
 					<input type="text" name="pseudo" id="pseudo" placeholder="Oracle" required /><br>
@@ -116,11 +115,23 @@
 					<label for="age">Fait a Abidjan le  :</label>
 					<input type="date" name="age" id="age" /><br>
 						<br>
-					<input type="submit" value="IMPRIMER" id="imprimer" />
-                    <input type="submit" value="SOUMETTRE" id="soumission"
+					<input type="submit" name="impression" onclick="imprimer_page()" value="IMPRIMER" id="imprimer" />
+                    <input type="submit" name="soumission" onclick="validerFormulaire()" value="SOUMETTRE" id="soumission"/>
 				</p>
+				<p style="color: red;" class="paragraphe"><b>NB:   Veuillez imprimer votre page avant de la soumettre.</b></p>
 			</form>
         
-
+			<script>
+				const imprimer_page =()=>{
+					window.print()
+				}
+			</script>
+			<script>
+				const validerFormulaire =()=>{
+					if(confirm('Voulez vous vraiment valider le formulaire ?')){
+						document.forms['traitement'].submit()
+					}
+				}
+			</script>
 		</body>
 	</html>
